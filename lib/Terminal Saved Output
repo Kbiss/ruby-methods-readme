@@ -1,0 +1,77 @@
+Last login: Wed Oct 21 09:47:24 on ttys000
+daddyky@Kyles-MacBook-Air ~ % rib
+zsh: command not found: rib
+daddyky@Kyles-MacBook-Air ~ % cd flatirion
+cd: no such file or directory: flatirion
+daddyky@Kyles-MacBook-Air ~ % cd flatiron
+daddyky@Kyles-MacBook-Air flatiron % ruby lib/example.rb
+Traceback (most recent call last):
+ruby: No such file or directory -- lib/example.rb (LoadError)
+daddyky@Kyles-MacBook-Air flatiron % irb
+2.6.1 :001 > ruby lib/example.rb
+Traceback (most recent call last):
+        4: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        3: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        2: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):1
+NameError (undefined local variable or method `lib' for main:Object)
+2.6.1 :002 > puts "hello world"
+hello world
+ => nil 
+2.6.1 :003 > phrase = "hello world"
+ => "hello world" 
+2.6.1 :004 > put phrase
+Traceback (most recent call last):
+        4: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        3: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        2: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        1: from (irb):4
+NoMethodError (undefined method `put' for main:Object)
+Did you mean?  puts
+               putc
+2.6.1 :005 > puts phrase
+hello world
+ => nil 
+2.6.1 :006 > def say_hello_ten_times
+2.6.1 :007?>   phrase = "hello world"
+2.6.1 :008?>   puts phrase
+2.6.1 :009?>   puts phrase
+2.6.1 :010?>   puts phrase
+2.6.1 :011?>   puts phrase
+2.6.1 :012?>   puts phrase
+2.6.1 :013?>   puts phrase
+2.6.1 :014?>   puts phrase
+2.6.1 :015?>   puts phrase
+2.6.1 :016?>   puts phrase
+2.6.1 :017?>   puts phrase
+2.6.1 :018?>   end
+ => :say_hello_ten_times 
+2.6.1 :019 > say_hello_ten_times
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+hello world
+ => nil 
+2.6.1 :020 > learn test
+Traceback (most recent call last):
+        5: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        4: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        3: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):20
+        1: from (irb):20:in `test'
+ArgumentError (wrong number of arguments (given 0, expected 2..3))
+2.6.1 :021 > learn submit
+Traceback (most recent call last):
+        5: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `<main>'
+        4: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/bin/irb:23:in `load'
+        3: from /Users/daddyky/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/irb-1.0.0/exe/irb:11:in `<top (required)>'
+        2: from (irb):21
+        1: from (irb):21:in `rescue in irb_binding'
+NameError (undefined local variable or method `submit' for main:Object)
+2.6.1 :022 > rputs phraser
